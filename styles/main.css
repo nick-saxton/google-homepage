@@ -1,5 +1,110 @@
 * {
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
   margin: 0;
   padding: 0;
+}
+
+body {
+  min-width: 980px;
+}
+
+ol {
+  align-items: center;
+  display: flex;
+}
+
+li {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+li > a {
+  opacity: 0.75;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.icon {
+  background-image: url("../images/icons.png");
+  background-size: 528px 68px;
+  display: inline-block;
+  opacity: 0.55;
+}
+
+.apps {
+  background-position: -132px -38px;
+  height: 30px;
+  width: 30px;
+}
+
+.notifications {
+  background-color: rgb(0, 0, 0);
+  background-position: -194px -21px;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.account {
+  background-image: url("https://lh3.googleusercontent.com/-VvgPJ_JIAgg/AAAAAAAAAAI/AAAAAAAAAAA/AFiYof2zWPIlHiGt5HlorU7Skn-YpKvL3A/s32-c-mo/photo.jpg");
+  border-radius: 50%;
+  display: inline-block;
+  height: 32px;
+  opacity: 1;
+  width: 32px;
+}
+
+.header {
+  padding-left: 25px;
+  padding-right: 12px;
+}
+
+.header > div, .footer > div {
+  display: inline-block;
+}
+
+.header ol {
+  height: 60px;
+}
+
+.logo {
+  padding-top: 138px;
+}
+
+.logo img {
+  display: block;
+  height: 92px;
+  margin: 0 auto;
+  width: 272px;
+}
+
+.footer ol {
+  height: 40px;
+}
+
+.footer ol li {
+  margin-right: 27px;
+}
+
+.right-nav {
+  float: right;
+}
+
+.footer {
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  bottom: 0;
+  padding-left: 30px;
+  position: absolute;
+  width: 100%;
 }
