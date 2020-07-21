@@ -1,61 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Google</title>
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <div class="left-nav">
-        <ol>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Store</a></li>
-        </ol>
-      </div>
-      <div class="right-nav">
-        <ol>
-          <li><a href="#">Gmail</a></li>
-          <li><a href="#">Images</a></li>
-          <li><a class="icon apps" href="#"></a></li>
-          <li><a class="icon notifications" href="#"></a></li>
-          <li><a class="account" href="#"></a></li>
-        </ol>
-      </div>
-    </div>
-    <div class="main">
-      <div class="logo">
-        <img src="images/logo.png" alt="Google logo">
-      </div>
-      <form action="#" method="GET">
-        <div class="search-bar">
-          <input type="text">
-          <div class="voice">
-            <div class="tooltip">Search by voice</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-menu left">
+          <div class="nav-item">About</div>
+          <div class="nav-item">Store</div>
+        </div>
+        <div class="nav-menu right">
+          <div class="nav-item">Gmail</div>
+          <div class="nav-item">Images</div>
+          <div class="nav-item"><div class="icon apps"></div></div>
+          <div class="nav-item">
+            <button class="primary">Sign in</button>
           </div>
         </div>
-        <div class="buttons">
-          <button type="submit">Google Search</button>
-          <button type="button">I'm Feeling Lucky</button>
-        </div>
-      </form>
-    </div>
-    <div class="footer">
-      <div class="left-nav">
-        <ol>
-          <li><a href="#">Advertising</a></li>
-          <li><a href="#">Business</a></li>
-        </ol>
+      </nav>
+    </header>
+    <main>
+      <img src="/images/logo.png" alt="Google logo" height="92" width="272" />
+      <div class="search">
+        <svg
+          focusable="false"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+          ></path>
+        </svg>
+        <input type="text" />
       </div>
-      <div class="right-nav">
-        <ol>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Settings</a></li>
-        </ol>
+      <div class="buttons">
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
       </div>
-    </div>
-  </div>
-</body>
+    </main>
+    <footer>
+      <div class="nav-menu left">
+        <div class="nav-item">Advertising</div>
+        <div class="nav-item">Business</div>
+        <div class="nav-item">How search works</div>
+      </div>
+      <div class="nav-menu right">
+        <div class="nav-item">Privacy</div>
+        <div class="nav-item">Terms</div>
+        <div class="nav-item">Settings</div>
+      </div>
+    </footer>
+  </body>
 </html>

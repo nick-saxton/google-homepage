@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+nav,
+footer {
+  display: flex;
+  flex: 0 1 auto;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  padding-top: 150px;
+}
+
+.search {
+  margin-top: 2rem;
+  width: 30%;
+  position: relative;
+}
+
+.search svg {
+  height: 20px;
+  width: 20px;
+  color: #9aa0a6;
+  fill: currentColor;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+}
+
+.search input {
+  width: 100%;
+  line-height: 3;
+  border-radius: 24px;
+  border: 1px solid #e4e4e4;
+  padding: 0 3rem;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.search input:hover,
+.search input:focus {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.buttons {
+  margin-top: 3rem;
+}
+
+.buttons button {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #5f6368;
+  padding: 0 1.2rem;
+  height: 3rem;
+  font-weight: normal;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  border: 1px solid #c6c6c6;
+  color: #222;
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.buttons button:first-child {
+  margin-right: 1rem;
+}
+
+footer {
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  color: #5f6368;
+  font-size: 14px;
+  width: 100%;
+}
+
+button {
+  border-radius: 2px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+button.primary {
+  background: -moz-linear-gradient(top, #4387fd, #4683ea);
+  background: linear-gradient(top, #4387fd, #4683ea);
+  border: 1px solid #4285f4;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-item {
+  align-items: center;
+  display: flex;
+  padding: 1rem 0;
+}
+
+.nav-menu.left .nav-item {
+  margin-right: 1rem;
+}
+
+.nav-menu.right .nav-item {
+  margin-left: 1rem;
+}
+
+footer .nav-menu.left .nav-item {
+  margin-right: 2rem;
+}
+
+footer .nav-menu.right .nav-item {
+  margin-left: 2rem;
+}
+
+.icon {
+  background-image: url("images/icons.png");
+  background-size: 528px 68px;
+  height: 30px;
+  width: 30px;
+}
+
+.icon.apps {
+  background-position: -132px -38px;
+}
